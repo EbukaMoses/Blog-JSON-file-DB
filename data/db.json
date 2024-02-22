@@ -1,0 +1,31 @@
+{
+  "blogs": [
+    {
+      "title": "My first Blogs",
+      "body": "My previous blog",
+      "author": "John Doe",
+      "date": "2018-09-30",
+      "id": "1"
+    },
+    {
+      "title": "My second Blogs",
+      "body": "My Recent blog",
+      "author": "John Doe",
+      "date": "2018-09-30",
+      "id": "2"
+    },
+    {
+      "title": "My Third Blogs",
+      "body": "My previous blog",
+      "author": "John Doe",
+      "date": "2018-09-30",
+      "id": "3"
+    },
+    {
+      "id": "5206",
+      "title": "Emeka",
+      "body": "Okoye",
+      "author": "yoshi"
+    }
+  ]
+}
