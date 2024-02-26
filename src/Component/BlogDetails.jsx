@@ -20,14 +20,17 @@ const BlogDetails = () => {
     <div className="blog-details">
       {IsPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
-      {blog && 
+      {blog && (
         <article>
-          <h2>{blog.title}</h2>
-          <p>writter by {blog.author}</p>
-          <div>{blog.body}</div>
-          <button onClick={handleClick}>Delete Post </button>
+          <img src={blog.image} alt={blog.title} />
+          <div className="detailbody">
+            <h2>{blog.title}</h2>
+            <p>writter by {blog.author}</p>
+            <div>{blog.body}</div>
+            <button onClick={handleClick}>Delete Post </button>
+          </div>
         </article>
-      }
+      )}
     </div>
   );
 }
