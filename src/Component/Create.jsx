@@ -2,17 +2,22 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Create = () => {
-  const [img, setImg] = useState(null);
+  // const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("yoshi");
   const [isPending, setIsPending] = useState(false);
   const navigate = useNavigate();
+  // const [status, setStatus] = useState < "initial" | "Upload" | "Success" | "Failed" > ("initial");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const blog = { title, body, author };
+    const date = new Date();
+    // const formData = new FormData();
+    // formData.append("file", image.name);
+
+    const blog = { image: formData, title, body, author, date };
 
     setIsPending(true);
 
@@ -24,7 +29,6 @@ const Create = () => {
       alert("Post Added Success!");
       setIsPending(false);
       navigate("/");
-      // navigate .go(-1)
     });
   };
   return (
@@ -36,10 +40,10 @@ const Create = () => {
             <label htmlFor="title">Img: </label>
             <input
               type="file"
-              required
-              value={img}
-              onChange={(e) => setImg(e.target.files[0])}
+              // accept=".json,.csv,.txt,.text,application/json,text/csv,text/plain"
+              onChange={(e) => setImage(URL.createObjectURL(e.target.files[0]))}
             />
+            {/* {image && <img src={URL.createObjectURL(image)} alt="Preview" />} */}
           </div>
           <div>
             <label htmlFor="title">Title: </label>

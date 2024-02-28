@@ -110,6 +110,19 @@ article .detailbody {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
+.detailbody .edit {
+  background-color: rgb(0, 200, 255);
+  border: 0;
+  margin-left: 1rem;
+  padding: 0.62%;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
 
 /* css for create post page  */
 .create {

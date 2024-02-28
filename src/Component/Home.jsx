@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div>
-      <SwiperCard imgs={blogs} />
+      {/* <SwiperCard imgs={blogs} /> */}
       <div className="Home">
         {error && <div className="error">{error}</div>}
         {isPending && <div>Loading...</div>}
